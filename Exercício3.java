@@ -1,32 +1,28 @@
-
-package exercício.pkg3;
+/*Faça um algoritmo que receba dois números e ao final mostre a soma, subtração, multiplicação e a divisão
+dos dois números lidos;*/
 
 import java.util.Scanner;
 
+public class Main {
 
-public class Exercício3 {
-
-    
     public static void main(String[] args) {
-       
-        float kilometragemPercorrida = 0f;
-        float litrosCombustível = 0f;
-        float consumoMedio = 0f;
         
-        Scanner leitor  = new Scanner(System.in);
-        
-        System.out.println("Digite a kilometragem percorrida");
-        kilometragemPercorrida = leitor.nextFloat();
-        
-        System.out.println("Digite quantos litros possuía o tanque do carro");
-        litrosCombustível = leitor.nextFloat();
-        
-        consumoMedio = kilometragemPercorrida/litrosCombustível;
-        
-        System.out.println("O Consumo médio é: " + consumoMedio);
+        int n1;
+        int n2;
         
         
-     
+        Scanner leitor = new Scanner(System.in, "UTF-8");
+        
+        System.out.println("Digite um numero");
+        n1 = leitor.nextInt();
+        
+        System.out.println("Digite outro numero");
+        n2 = leitor.nextInt();
+        
+        System.out.println("A soma dos dois números é: "+ (n1 + n2));
+        System.out.println("A subtração dos dois números é :" + (n1-n2) );
+        System.out.println("A divisão entre os dois números é: "+ (n1 / n2));
+        System.out.println("A soma multiplicação dois números é: "+ (n1 * n2));   
     }
     
 }
